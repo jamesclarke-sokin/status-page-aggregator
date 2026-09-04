@@ -6,6 +6,7 @@ require 'yaml'
 class StatusPageAggregator < Sinatra::Base
   configure do
     set :status_pages, YAML.load_file('config/status_pages.yml')
+    set :host_authorization, { permitted_hosts: ['status-page-aggregator.onrender.com'] }
   end
 
   get '/styles.css' do

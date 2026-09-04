@@ -6,3 +6,4 @@ gem 'puma', '~> 6.5'
 gem 'rack', '~> 3.1'
 gem 'sassc'
 gem 'sinatra', '~> 4.1'
+gem "rackup", "~> 2.1"
